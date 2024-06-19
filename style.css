@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.raleway {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+}
+
+/* Global Styles & Style Resets */
+
+h1 {
+    font-size: 1.6rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+/* Main Layout */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-color: #eee;
+    font-size: 14px;
+}
+
+.wrapper-main {
+    display: flex;
+    width: 1000px;
+    height: 600px;
+    border-radius: 25px;
+    background-image: url("./images/clouds_bg.jpg");
+    box-shadow: 5px 5px 10px #aaa;
+}
+
+/* Left Side Styling */
+
+.wrapper-left {
+    flex: 1;
+    position: relative;
+    color: white;
+}
+
+.left-header-top {
+    margin-top: 70px;
+}
+
+.left-logo {
+    width: 100px;
+    border-radius: 100px;
+    margin-top: 50px;
+}
+
+.left-desc {
+    margin: 70px 50px 0px 50px;
+    font-size: 0.8rem;
+}
+
+.left-footer {
+    margin-top: auto;
+    position: absolute;
+    bottom: 3%;
+    left: 20%;
+}
+
+.left-footer > * {
+    text-transform: uppercase;
+    padding: 0px 10px 10px 10px;
+}
+
+/* Right Side Styling */
+
+.wrapper-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right-header {
+    margin-top: 70px;
+}
+
+.right-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    width: 70%;
+}
+
+.form-field {
+    width: 100%;
+}
+
+.form-field > label {
+    display: flex;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.form-field > input {
+    margin-bottom: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: solid 2px hsl(209, 66%, 52%)
+}
+
+.form-field > input:focus {
+    border: solid 2px hsl(209, 66%, 52%)
+}
+
+.form-field input:not(:placeholder-shown):not(:focus):invalid {
+    border-bottom: solid 2px red;
+}
+
+.form-field > input::placeholder {
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+
+.form-checkbox {
+    text-align: left;
+}
+
+button {
+    padding: 5px 20px;
+    font-size: 1.4rem;
+    margin: 20px;
+    margin-top: 70px;
+    border: solid 2px lightgray;
+    border-radius: 40px;
+}
+
+.btn-signup {
+    background-color: hsl(209, 66%, 52%);
+    color: white;
+    font-weight: 500;
+}
+
+.btn-signup:hover {
+    background-color: hsl(209, 66%, 42%);
+    cursor: pointer;
+}
+
+.btn-signin {
+    background-color: white;
+    color: lightgray;
+}
+
+.btn-signin:hover {
+    background-color: hsl(0, 0%, 90%);
+    color: white;
+    cursor: pointer;
+}
+
+/* Credit Text Styling */
+
+.credit-text {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 40px;
+}

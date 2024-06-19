@@ -8,43 +8,72 @@
 </head>
 <body>
 
-    <div class="wrapper main">
+    <div class="wrapper-main">
 
-        <div class="wrapper left">
-            <h1 class="left-header-top">Welcome To</h2>
-            <img src="https://placehold.co/250x250" alt="" class="left-logo">
+        <div class="wrapper-left">
+            <h2 class="left-header-top">Welcome To</h2>
+            <img src="./images/logo.jpg" alt="" class="left-logo">
             <h1 class="left-header-logo">Spacer</h1>
             <p class="left-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam officiis odio et amet omnis eligendi temporibus inventore consequuntur, perferendis dolore pariatur nobis totam, consectetur enim, soluta qui corporis. Praesentium, possimus!</p>
-            <footer class="left-footer">Creator Hire | Designer Hire</footer>
+            <div class="left-footer">
+                <span class="footer-text">Creator <b>Hire</b></span>
+                <span class="footer-text"> | </span>
+                <span class="footer-text">Designer <b>Hire</b></span>
+            </div>
         </div>
 
-        <div class="wrapper right">
+        <div class="wrapper-right">
             <h1 class="right-header">Create your account</h1>
             <form action="" class="right-form">
-                <div class="form-section">
+                <div class="form-field">
                     <label for="name">Name</label>
-                    <input type="text" name="name" id="name">
+                    <input 
+                    required 
+                    type="text" 
+                    name="name" 
+                    id="name" 
+                    placeholder="Enter your name"
+                    >
                 </div>
-                <div class="form-section">
+                <div class="form-field">
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
+                    <input 
+                    required 
+                    type="email" 
+                    name="email" 
+                    id="email" 
+                    placeholder="Enter your email"
+                    >
                 </div>
-                <div class="form-section">
+                <div class="form-field">
                     <label for="password">Password</label>
-                    <input type="password" name="password" id="password">
+                    <input 
+                    required
+                    type="password" 
+                    name="password" 
+                    id="password" 
+                    placeholder="Enter your password"
+                    minlength="6" 
+                    maxlength="20"
+                    >
                 </div>
-                <div class="form-section">
-                    <input type="checkbox" name="terms_yes" id="checkbox">
+                <div class="form-checkbox">
+                    <input type="checkbox" name="terms_yes" id="checkbox" checked>
                     <label for="checkbox">By Signing Up, I Agree with <a href="http://" target="_blank" rel="noopener noreferrer">Terms & Conditions</a></label>
                 </div>
-                <div class="form-section">
-                    <button type="submit">Sign Up</button>
-                    <button type="button">Sign In</button>
+                <div class="form-buttons">
+                    <button class="btn-signup" type="submit">Sign Up</button>
+                    <button class="btn-signin" type="button">Sign In</button>
                 </div>
             </form>
         </div>
 
     </div>
+
+    <div class="credit-text">
+        Created by Josh Devon 2024 | Odin Project Intermediate HTML & CSS
+    </div>
+
     
 </body>
 </html>
